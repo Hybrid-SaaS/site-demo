@@ -1,0 +1,199 @@
+a {
+  color: #0066ee;
+}
+a:hover {
+  color: #0066ee !important;
+}
+a:visited {
+  color: #1a1e86;
+}
+u {
+  text-decoration: none;
+}
+.test-mode {
+  padding: 10px;
+  border: solid 1px #ffacac;
+  background-color: #ffeded;
+  margin-bottom: 10px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 12px;
+  color: red;
+}
+.maincontent {
+  font-size: 10pt;
+  width: 1060px;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  min-height: 500px;
+  border: solid 2px black;
+  padding-bottom: 30px;
+}
+.maincontent #columns {
+  display: table;
+}
+.maincontent #columns .main-column-left {
+  display: table-cell;
+  vertical-align: top;
+  width: 210px;
+  min-height: 500px;
+}
+.maincontent #columns .main-column-right {
+  padding-left: 10px;
+  display: table-cell;
+  vertical-align: top;
+  min-height: 500px;
+  width: 840px;
+  border: 1px solid black;
+}
+.maincontent #columns .main-column-right .usercontent {
+  text-align: justify;
+  padding-bottom: 10px;
+}
+.maincontent #columns .main-column-right .usercontent.above img {
+  max-width: 830px;
+}
+.maincontent #columns .main-column-right .container {
+  width: 840px;
+  margin: 0;
+  float: left;
+}
+.maincontent #columns .main-column-right .container .product {
+  background: none !important;
+  min-height: 255px;
+  max-height: 275px;
+  margin-right: 10px !important;
+  float: left;
+  border: 1px solid black;
+}
+.maincontent #columns .main-column-right .container .product:hover {
+  border: 2px solid #707070;
+}
+.maincontent #columns .main-column-right .container .product .number {
+  font-weight: 100 !important;
+  overflow: visible !important;
+  white-space: normal !important;
+}
+.maincontent #columns .main-column-right .container .product a {
+  font-weight: bold;
+  font-size: 10px;
+}
+.maincontent #columns .main-column-right .container .product a:visited {
+  color: #0066ee;
+}
+.maincontent #columns .main-column-right .container .product a .title {
+  height: 50px;
+  width: 182px;
+  font-size: 12px;
+  min-height: 50px !important;
+}
+.maincontent #columns .main-column-right .container .product.hover .details {
+  display: none;
+}
+.maincontent #columns .main-column-right .container .product .details {
+  position: relative;
+  width: 184px;
+  height: 26px;
+  margin: 6px 0 0 4px;
+  display: none;
+}
+.maincontent #columns .main-column-right .container .product .detail {
+  border: 2px solid black;
+}
+.maincontent #columns .main-column-right .container a {
+  float: left;
+  margin-right: 15px;
+  margin-left: 0;
+}
+.maincontent #columns .main-column-right .container a .path {
+  width: 405px;
+  height: 188px;
+}
+.maincontent #columns .main-column-right .usercontent.below {
+  margin-bottom: 50px;
+  padding-right: 20px;
+  float: left;
+}
+.maincontent #columns .main-column-right .template-content {
+  float: left;
+}
+.maincontent.hasmenu .content {
+  width: 858px;
+  margin-left: 30px;
+  padding-left: 0;
+}
+.maincontent .topmenu {
+  padding: 10px;
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+.maincontent .topmenu nav {
+  border: 2px solid black;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  font-weight: bold;
+  font-size: 15px;
+}
+.maincontent .topmenu nav li {
+  list-style-type: none;
+  margin: 0;
+  display: inline-block;
+}
+.maincontent .topmenu nav li a {
+  text-decoration: none;
+  padding-left: 26px;
+  padding-right: 26px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.maincontent .menucontent {
+  margin-left: 10px;
+}
+.maincontent .menucontent nav {
+  border: 2px solid black;
+  display: inline-block;
+  vertical-align: top;
+  width: 190px;
+  margin-right: 10px;
+}
+#footer {
+  width: 1060px;
+  height: 50px;
+  margin: auto;
+  margin-top: 50px;
+  border: 2px solid black;
+  padding: 5px 0 0 0;
+}
+#header {
+  width: 1060px;
+  height: 50px;
+  margin: auto;
+  border: 2px solid black;
+  padding: 5px 0 0 0;
+}
+#bottommenu {
+  width: 1060px;
+  padding: 10px;
+  margin: auto;
+}
+#bottommenu nav {
+  border: 2px solid black;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  font-weight: bold;
+  font-size: 15px;
+}
+#bottommenu nav li {
+  list-style-type: none;
+  margin: 0;
+  display: inline-block;
+}
+#bottommenu nav li a {
+  text-decoration: none;
+  padding-left: 26px;
+  padding-right: 26px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+/*# sourceMappingURL=main.css.map */
