@@ -2,7 +2,7 @@ a {
   color: #0066ee;
 }
 a:hover {
-  color: #0066ee !important;
+  /*color: #0066ee !important;*/
 }
 a:visited {
   color: #1a1e86;
@@ -27,7 +27,6 @@ u {
   margin-top: 20px;
   margin-bottom: 20px;
   min-height: 500px;
-  border: solid 2px black;
   padding-bottom: 30px;
 }
 .maincontent #columns {
@@ -45,7 +44,7 @@ u {
   vertical-align: top;
   min-height: 500px;
   width: 840px;
-  border: 1px solid black;
+  color: #222
 }
 .maincontent #columns .main-column-right .usercontent {
   text-align: justify;
@@ -62,19 +61,44 @@ u {
 .maincontent #columns .main-column-right .container .product {
   background: none !important;
   min-height: 255px;
-  max-height: 275px;
   margin-right: 10px !important;
   float: left;
-  border: 1px solid black;
+  border: 1px dashed #DDD;
+  text-align: center;
+  box-shadow: none;
+  border-radius: 0;
 }
 .maincontent #columns .main-column-right .container .product:hover {
-  border: 2px solid #707070;
+  border: 1px solid #DDD;
 }
 .maincontent #columns .main-column-right .container .product .number {
   font-weight: 100 !important;
   overflow: visible !important;
   white-space: normal !important;
 }
+.maincontent #columns .main-column-right .container .product .price {
+	font-size: 18px;
+	font-weight: normal;
+	color: #444;
+}
+.maincontent #columns .main-column-right .container .product .imageFrame {
+	position: relative;
+	height: 200px;
+	width: 175px;
+}
+.maincontent #columns .main-column-right .container .product .imageFrame img {
+  position: absolute;
+  max-height: 100%;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
 .maincontent #columns .main-column-right .container .product a {
   font-weight: bold;
   font-size: 10px;
@@ -83,10 +107,11 @@ u {
   color: #0066ee;
 }
 .maincontent #columns .main-column-right .container .product a .title {
-  height: 50px;
+  height: 30px;
   width: 182px;
   font-size: 12px;
-  min-height: 50px !important;
+  min-height: 30px !important;
+  color: #222;
 }
 .maincontent #columns .main-column-right .container .product.hover .details {
   display: none;
@@ -124,15 +149,14 @@ u {
   padding-left: 0;
 }
 .maincontent .topmenu {
-  padding: 10px;
-  margin-bottom: 10px;
-  margin-top: 5px;
+  margin: 5px -9999rem 10px;
+  padding: 0.25rem 9999rem;
+
+  background-color: rgba(248, 247, 247, .95);
 }
 .maincontent .topmenu nav {
-  border: 2px solid black;
   padding-top: 8px;
   padding-bottom: 8px;
-  font-weight: bold;
   font-size: 15px;
 }
 .maincontent .topmenu nav li {
@@ -141,21 +165,34 @@ u {
   display: inline-block;
 }
 .maincontent .topmenu nav li a {
-  text-decoration: none;
   padding-left: 26px;
   padding-right: 26px;
   padding-top: 10px;
   padding-bottom: 10px;
 }
+
+.maincontent .topmenu nav li a, .maincontent .topmenu nav li a:visited, .maincontent .topmenu nav li a:hover, .maincontent .menucontent nav a, .maincontent .menucontent nav a:visited {
+	color: #222;
+	text-decoration: none;
+}
+
+.maincontent .menucontent nav a:hover {
+	text-decoration: underline;
+}
+
 .maincontent .menucontent {
+	margin-top: 25px;
   margin-left: 10px;
+  font-size: 14px;
 }
 .maincontent .menucontent nav {
-  border: 2px solid black;
   display: inline-block;
   vertical-align: top;
   width: 190px;
   margin-right: 10px;
+}
+.maincontent .menucontent nav li {
+	padding: 5px 0;
 }
 #footer {
   width: 1060px;
@@ -166,11 +203,11 @@ u {
   padding: 5px 0 0 0;
 }
 #header {
-  width: 1060px;
+	width: auto;
   height: 50px;
   margin: auto;
-  border: 2px solid black;
   padding: 5px 0 0 0;
+	background-color: #465363;
 }
 #bottommenu {
   width: 1060px;
