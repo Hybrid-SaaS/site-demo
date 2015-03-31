@@ -176,15 +176,6 @@ u {
   background-color: #FFCCCC;
   border-color: red;
 }
-.maincontent .main-column-right .product .imageFrame {
-  text-align: center;
-  margin-bottom: 8px;
-  border: solid 1px #7A7A7A;
-  border-radius: 0.75em;
-}
-.maincontent .main-column-right .product .imageFrame img {
-  border-radius: 0.75em;
-}
 .maincontent .main-column-right .product .header-custom {
   color: gray;
   margin-bottom: 10px;
