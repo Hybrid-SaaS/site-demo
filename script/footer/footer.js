@@ -5,7 +5,7 @@
 	var bottomHeight = $("#bottommenu").outerHeight(true);
 	var bottomHeight2 = $("#bottommenu2").outerHeight(true);
 	var diff = $(".maincontent").first().outerHeight(true) - $(".maincontent").first().height();
-	var minheight = testHeight + headerHeight + bottomHeight + bottomHeight2 + diff + 10;
+	var minheight = testHeight + headerHeight + bottomHeight + bottomHeight2 + diff;
 	$(".maincontent").first().css("min-height", (windowHeight - minheight) + "px");
 
 	$(window).resize(function () {
