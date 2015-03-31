@@ -1,4 +1,7 @@
-﻿u {
+﻿body {
+  overflow-x: hidden;
+}
+u {
   text-decoration: none;
 }
 .test-mode {
