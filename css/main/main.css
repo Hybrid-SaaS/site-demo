@@ -54,6 +54,7 @@ u {
   float: left;
 }
 .maincontent .main-column-right .container .product {
+  margin-top: 20px;
   background: none !important;
   min-height: 255px;
   margin-right: 10px !important;
@@ -137,27 +138,342 @@ u {
 .maincontent .main-column-right .template-content {
   float: left;
 }
+.maincontent .main-column-right .product .label {
+  width: 120px;
+  display: inline-block;
+  vertical-align: top;
+}
+.maincontent .main-column-right .product .value {
+  display: inline-block;
+}
+.maincontent .main-column-right .product .value.price {
+  font-weight: bold;
+  color: green;
+}
+.maincontent .main-column-right .product .value.price .symbol {
+  font-weight: normal;
+}
+.maincontent .main-column-right .product .sheet {
+  margin-top: 10px;
+  color: gray;
+  font-size: 10px;
+  cursor: pointer;
+}
+.maincontent .main-column-right .product .input-extension {
+  margin-top: 10px;
+}
+.maincontent .main-column-right .product .input-remark {
+  margin-top: 10px;
+  display: inline-block;
+  color: gray;
+  font-size: 11px;
+  margin-left: 4px;
+}
+.maincontent .main-column-right .product .input {
+  margin-top: 2px;
+}
+.maincontent .main-column-right .product .missing {
+  background-color: #FFCCCC;
+  border-color: red;
+}
+.maincontent .main-column-right .product .imageFrame {
+  text-align: center;
+  margin-bottom: 8px;
+  border: solid 1px #7A7A7A;
+  border-radius: 0.75em;
+}
+.maincontent .main-column-right .product .imageFrame img {
+  border-radius: 0.75em;
+}
+.maincontent .main-column-right .product .header-custom {
+  color: gray;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  font-style: italic;
+}
+.maincontent .main-column-right .product .input-submit {
+  margin-left: 122px;
+  margin-top: 2px;
+}
+.maincontent .main-column-right .product .input-submit button {
+  border-radius: 0px 0px 8px 0px;
+}
+.maincontent .main-column-right .product textarea.input {
+  border: solid 1px steelblue;
+  background-color: #ffd;
+  border-radius: 2px;
+  font-size: 12px;
+  padding: 4px;
+  color: #333;
+}
+.maincontent .main-column-right .product #remark {
+  width: 300px;
+  height: 100px;
+}
+.maincontent .main-column-right .product .details {
+  vertical-align: top;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 595px;
+}
+.maincontent .main-column-right .product #extension .input-pulldown {
+  width: 130px;
+}
+.maincontent .main-column-right .product #disqus_thread {
+  margin-right: 10px;
+  width: 400px;
+  margin-top: 20px;
+}
+.maincontent .main-column-right .product .related-container .related {
+  border: solid 1px #D2CFCD;
+  background-color: #EFEBE8;
+  width: 187px;
+  height: 45px;
+  -moz-transition: height 0.25s;
+  -o-transition: height 0.25s;
+  -webkit-transition: height 0.25s;
+  transition: height 0.25s;
+  margin-left: 6px;
+  float: left;
+  border-radius: 0.75em;
+  margin-bottom: 10px;
+  box-shadow: 0 0 4px rgba(122, 122, 122, 0.5);
+  cursor: pointer;
+}
+.maincontent .main-column-right .product .related-container .related.open {
+  cursor: default;
+  height: 160px;
+}
+.maincontent .main-column-right .product .related-container .related.open .imageFrame {
+  border: solid 1px #666;
+  box-shadow: 4px 4px 4px rgba(122, 122, 122, 0.5);
+  z-index: 101;
+  min-height: 138px;
+  padding-bottom: 0;
+}
+.maincontent .main-column-right .product .related-container .related.open .imageFrame img {
+  display: block !important;
+}
+.maincontent .main-column-right .product .related-container .related.open .imageFrame img:hover {
+  border: dotted 1px #8c3292;
+}
+.maincontent .main-column-right .product .related-container .related.open .imageFrame .label {
+  color: #8c3292;
+}
+.maincontent .main-column-right .product .related-container .related .imageFrame {
+  position: relative;
+  z-index: 100;
+  vertical-align: top;
+  width: 167px;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  border: dotted 1px #C9C8C8;
+  border-radius: 0.75em;
+  background-color: white;
+  padding-bottom: 4px;
+}
+.maincontent .main-column-right .product .related-container .related .imageFrame:hover {
+  border-color: #333;
+}
+.maincontent .main-column-right .product .related-container .related .imageFrame img {
+  border: solid 1px white;
+  cursor: pointer;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: none;
+}
+.maincontent .main-column-right .product .related-container .related .imageFrame .label {
+  font-weight: bold;
+  color: #565656;
+  font-size: 12px;
+  white-space: nowrap;
+  margin-top: 5px;
+}
 .maincontent .main-column-right .product .top-description {
   color: #222;
   font-size: 20px;
   padding-bottom: 0;
   margin-bottom: 20px;
   border-bottom: 2px solid #465363;
+  font-weight: bold;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
+  opacity: 1;
+  margin-right: 15px;
+}
+.maincontent .main-column-right .product .product-left {
+  width: 600px;
+  float: left;
+}
+.maincontent .main-column-right .product .product-left .product-image {
+  display: inline-block;
+  vertical-align: top;
 }
 .maincontent .main-column-right .product .product-left .product-image .imageFrame {
+  width: 400px;
+  min-height: 280px;
   box-shadow: none;
   border: none;
 }
+.maincontent .main-column-right .product .product-left .product-detail {
+  margin-top: 20px;
+  font-size: 12px;
+  display: inline-block;
+  vertical-align: top;
+}
 .maincontent .main-column-right .product .product-left .product-detail .header {
+  font-weight: bold;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
   color: #444;
+  opacity: 1;
   border-bottom: 1px solid #465363;
   padding-bottom: 2px;
+  margin-bottom: 8px;
+  margin-right: 15px;
+}
+.maincontent .main-column-right .product .product-left .product-detail .description {
+  padding-bottom: 5px;
+  font-weight: bold;
 }
 .maincontent .main-column-right .product .product-left .product-detail .info .value.price {
   color: #222;
 }
+.maincontent .main-column-right .product .product-right {
+  margin-left: 26px;
+  float: left;
+  clear: right;
+}
+.maincontent .main-column-right .product .product-right .product-options {
+  width: 399px;
+  display: inline-block;
+}
+.maincontent .main-column-right .product .product-right .product-options .header {
+  background-image: url('//hybridsaasblob.blob.core.windows.net/aspekto-public/website/pages/product-detail/personaliseer.png');
+  width: 399px;
+  height: 51px;
+}
+.maincontent .main-column-right .product .product-right .product-options .body {
+  width: 363px;
+  border: solid 1px #D2CFCD;
+  border-top: none;
+  margin-left: 7px;
+  background-color: #EFEBE8;
+  box-shadow: 0 2px 4px rgba(92, 92, 92, 0.25);
+  padding: 10px;
+  padding-bottom: 20px;
+  color: #565656;
+}
+.maincontent .main-column-right .product .product-right .product-options .body .intro.item .description {
+  font-weight: bold;
+}
+.maincontent .main-column-right .product .product-right .product-options .body .intro.item .option-header {
+  margin-top: 10px;
+  font-weight: bold;
+}
 .maincontent .main-column-right .product .product-right .product-options .body .intro.item .value.price {
   color: #222;
+}
+.maincontent .main-column-right .product .product-right .product-options .body .item {
+  padding-left: 50px;
+}
+.maincontent .main-column-right .product .product-right .product-options .body .number {
+  position: relative;
+  margin-top: -10px;
+  display: inline-block;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border: solid 1px #b33fb2;
+  background-color: #8F328E;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  padding-top: 1px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+.maincontent .main-column-right .product .product-right .product-options .body .input-item {
+  margin-top: 15px;
+  padding-left: 50px;
+}
+.maincontent .main-column-right .product .product-right .product-options .body .number-item {
+  vertical-align: top;
+  margin-left: 18px;
+  display: inline-block;
+  padding-top: 4px;
+}
+.maincontent .main-column-right .product .product-right .product-options .body .number-item input[type=text] {
+  width: 300px;
+  border: solid 1px #7D7D7F;
+  height: 25px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.14);
+  font-size: 12px;
+  padding-left: 5px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.maincontent .main-column-right .product .product-right .product-options .body .number-item textarea {
+  font-size: 12px;
+  padding-left: 5px;
+  width: 300px;
+  height: 80px;
+  border: solid 1px #7D7D7F;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.14);
+}
+.maincontent .main-column-right .product .product-right .product-options .body .number-item select {
+  width: 300px;
+  border: solid 1px #7D7D7F;
+  height: 25px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.14);
+  font-size: 12px;
+  padding-left: 5px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.maincontent .main-column-right .product .product-right .product-options .body .number-item .cart-button {
+  background-image: url('//hybridsaasblob.blob.core.windows.net/aspekto-public/website/images/cart/cart-white.svg');
+  background-size: 34px 28px;
+  background-repeat: no-repeat;
+  background-position: 230px;
+  width: 300px;
+  border: outset 1px #7D7D7F;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 10px;
+  padding-top: 12px;
+  padding-right: 40px;
+  color: white;
+  background-color: #008200;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.14);
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  outline: none;
+}
+.maincontent .main-column-right .product .product-right .product-options .body .number-item .cart-button:hover {
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+.maincontent .main-column-right .product .product-right .product-options .body .number-item .cart-button:active {
+  padding-top: 13px;
+  padding-bottom: 9px;
+  padding-right: 38px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.34);
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  background-position: 231px 8px;
+}
+.maincontent .main-column-right .product .product-right .product-options .footer {
+  height: 42px;
+  width: 386px;
+  background-image: url('//hybridsaasblob.blob.core.windows.net/aspekto-public/website/pages/product-detail/personaliseer-onder.png');
+  margin-left: 7px;
+  margin-bottom: 20px;
 }
 .maincontent.hasmenu .content {
   width: 858px;
@@ -228,6 +544,61 @@ u {
 .maincontent .menucontent nav a:hover,
 .maincontent .menucontent nav a:visited:hover {
   text-decoration: underline;
+}
+.product-image-rest {
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+  width: 165px;
+  margin-left: 10px;
+  min-height: 122.5px;
+  text-align: center;
+  margin-bottom: 8px;
+  border: solid 1px #7A7A7A;
+  border-radius: 0.75em;
+  box-shadow: 0 0 4px rgba(122, 122, 122, 0.5);
+  background-color: #F6F4F3;
+}
+.product-image-rest:before {
+  background-color: #F6F4F3;
+  border-left: solid 1px #7A7A7A;
+  border-bottom: solid 1px #7A7A7A;
+  content: "\00a0";
+  display: block;
+  height: 10px;
+  left: -6px;
+  position: relative;
+  top: 20px;
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  width: 10px;
+}
+.product-image-rest .header {
+  font-weight: bold;
+  color: #565656;
+  margin-top: 10px;
+  margin-bottom: 17px;
+}
+.product-image-rest .imageFrame {
+  width: 135px;
+  min-height: 100px;
+  margin: auto;
+  border: dotted 1px #C9C8C8;
+  background-color: white;
+  margin-bottom: 10px;
+  cursor: pointer;
+  opacity: 0.6;
+}
+.product-image-rest .imageFrame:hover {
+  border: solid 1px #C9C8C8;
+  opacity: 1;
+}
+.product-image-rest .imageFrame.active {
+  border: solid 1px gray;
+  opacity: 0.7;
 }
 #footer {
   width: 1060px;
