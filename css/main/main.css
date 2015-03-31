@@ -1,13 +1,4 @@
-﻿a {
-  color: #0066ee;
-}
-a:hover {
-  /*color: #0066ee !important;*/
-}
-a:visited {
-  color: #1a1e86;
-}
-u {
+﻿u {
   text-decoration: none;
 }
 .test-mode {
@@ -32,33 +23,34 @@ u {
 .maincontent #columns {
   display: table;
 }
-.maincontent #columns .main-column-left {
+.maincontent .main-column-left {
   display: table-cell;
   vertical-align: top;
   width: 210px;
   min-height: 500px;
 }
-.maincontent #columns .main-column-right {
+.maincontent .main-column-right {
   padding-left: 10px;
   display: table-cell;
   vertical-align: top;
   min-height: 500px;
   width: 840px;
-  color: #222222;
+  color: #222;
 }
-.maincontent #columns .main-column-right .usercontent {
+.maincontent .main-column-right .usercontent {
   text-align: justify;
   padding-bottom: 10px;
+  margin-top: 30px;
 }
-.maincontent #columns .main-column-right .usercontent.above img {
+.maincontent .main-column-right .usercontent.above img {
   max-width: 830px;
 }
-.maincontent #columns .main-column-right .container {
+.maincontent .main-column-right .container {
   width: 840px;
   margin: 0;
   float: left;
 }
-.maincontent #columns .main-column-right .container .product {
+.maincontent .main-column-right .container .product {
   background: none !important;
   min-height: 255px;
   margin-right: 10px !important;
@@ -68,25 +60,25 @@ u {
   box-shadow: none;
   border-radius: 0;
 }
-.maincontent #columns .main-column-right .container .product:hover {
+.maincontent .main-column-right .container .product:hover {
   border: 1px solid #e1e1e1;
 }
-.maincontent #columns .main-column-right .container .product .number {
+.maincontent .main-column-right .container .product .number {
   font-weight: 100 !important;
   overflow: visible !important;
   white-space: normal !important;
 }
-.maincontent #columns .main-column-right .container .product .price {
+.maincontent .main-column-right .container .product .price {
   font-size: 18px;
   font-weight: normal;
   color: #444;
 }
-.maincontent #columns .main-column-right .container .product .imageFrame {
+.maincontent .main-column-right .container .product .imageFrame {
   position: relative;
   height: 200px;
   width: 175px;
 }
-.maincontent #columns .main-column-right .container .product .imageFrame img {
+.maincontent .main-column-right .container .product .imageFrame img {
   position: absolute;
   max-height: 100%;
   max-width: 100%;
@@ -98,49 +90,71 @@ u {
   right: 0;
   margin: auto;
 }
-.maincontent #columns .main-column-right .container .product a {
+.maincontent .main-column-right .container .product a {
   font-weight: bold;
   font-size: 10px;
 }
-.maincontent #columns .main-column-right .container .product a:visited {
-  color: #0066ee;
-}
-.maincontent #columns .main-column-right .container .product a .title {
+.maincontent .main-column-right .container .product a .title {
   height: 30px;
   width: 182px;
   font-size: 12px;
   min-height: 30px !important;
   color: #222;
 }
-.maincontent #columns .main-column-right .container .product.hover .details {
+.maincontent .main-column-right .container .product a:visited {
+  color: #222;
+}
+.maincontent .main-column-right .container .product.hover .details {
   display: none;
 }
-.maincontent #columns .main-column-right .container .product .details {
+.maincontent .main-column-right .container .product .details {
   position: relative;
   width: 184px;
   height: 26px;
   margin: 6px 0 0 4px;
   display: none;
 }
-.maincontent #columns .main-column-right .container .product .detail {
+.maincontent .main-column-right .container .product .detail {
   border: 2px solid black;
 }
-.maincontent #columns .main-column-right .container a {
+.maincontent .main-column-right .container a {
   float: left;
   margin-right: 15px;
   margin-left: 0;
 }
-.maincontent #columns .main-column-right .container a .path {
+.maincontent .main-column-right .container a .path {
   width: 405px;
   height: 188px;
 }
-.maincontent #columns .main-column-right .usercontent.below {
+.maincontent .main-column-right .usercontent.below {
   margin-bottom: 50px;
   padding-right: 20px;
   float: left;
 }
-.maincontent #columns .main-column-right .template-content {
+.maincontent .main-column-right .template-content {
   float: left;
+}
+.maincontent .main-column-right .product .top-description {
+  color: #222;
+  font-size: 20px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #465363;
+}
+.maincontent .main-column-right .product .product-left .product-image .imageFrame {
+  box-shadow: none;
+  border: none;
+}
+.maincontent .main-column-right .product .product-left .product-detail .header {
+  color: #444;
+  border-bottom: 1px solid #465363;
+  padding-bottom: 2px;
+}
+.maincontent .main-column-right .product .product-left .product-detail .info .value.price {
+  color: #222;
+}
+.maincontent .main-column-right .product .product-right .product-options .body .intro.item .value.price {
+  color: #222;
 }
 .maincontent.hasmenu .content {
   width: 858px;
@@ -157,6 +171,17 @@ u {
   padding-bottom: 8px;
   font-size: 15px;
 }
+.maincontent .topmenu nav a {
+  color: #222;
+  text-decoration: none;
+}
+.maincontent .topmenu nav a:visited {
+  color: #222;
+  text-decoration: none;
+}
+.maincontent .topmenu nav a:hover {
+  text-decoration: underline;
+}
 .maincontent .topmenu nav li {
   list-style-type: none;
   margin: 0;
@@ -167,17 +192,16 @@ u {
   padding-right: 26px;
   padding-top: 10px;
   padding-bottom: 10px;
-}
-.maincontent .topmenu nav li a,
-.maincontent .topmenu nav li a:visited,
-.maincontent .topmenu nav li a:hover,
-.maincontent .menucontent nav a,
-.maincontent .menucontent nav a:visited {
   color: #222;
   text-decoration: none;
 }
-.maincontent .menucontent nav a:hover {
-  text-decoration: underline;
+.maincontent .topmenu nav li a:visited {
+  color: #222;
+  text-decoration: none;
+}
+.maincontent .topmenu nav li a:hover {
+  background-color: #EEE;
+  text-decoration: none;
 }
 .maincontent .menucontent {
   margin-top: 25px;
@@ -192,6 +216,15 @@ u {
 }
 .maincontent .menucontent nav li {
   padding: 5px 0;
+}
+.maincontent .menucontent nav a,
+.maincontent .menucontent nav a:visited {
+  color: #222;
+  text-decoration: none;
+}
+.maincontent .menucontent nav a:hover,
+.maincontent .menucontent nav a:visited:hover {
+  text-decoration: underline;
 }
 #footer {
   width: 1060px;
@@ -211,14 +244,14 @@ u {
 #bottommenu {
   width: 1060px;
   padding: 10px;
+  padding-bottom: 0;
   margin: auto;
 }
 #bottommenu nav {
-  border: 2px solid black;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  font-weight: bold;
   font-size: 15px;
+  margin: 5px -9999rem 0;
+  padding: 0.50rem 9999rem;
+  background-color: #f5f5f5;
 }
 #bottommenu nav li {
   list-style-type: none;
@@ -226,10 +259,45 @@ u {
   display: inline-block;
 }
 #bottommenu nav li a {
-  text-decoration: none;
   padding-left: 26px;
   padding-right: 26px;
   padding-top: 10px;
   padding-bottom: 10px;
+  text-decoration: none;
+  color: #222;
+}
+#bottommenu nav li a:visited,
+#bottommenu nav li a:hover {
+  text-decoration: none;
+  color: #222;
+}
+#bottommenu2 {
+  width: 1060px;
+  padding: 0;
+  margin: auto;
+}
+#bottommenu2 nav {
+  font-size: 15px;
+  margin: 0 -9999rem 10px;
+  padding: 0.50rem 9999rem;
+  background-color: #465363;
+}
+#bottommenu2 nav li {
+  list-style-type: none;
+  margin: 0;
+  display: inline-block;
+}
+#bottommenu2 nav li a {
+  padding-left: 26px;
+  padding-right: 26px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-decoration: none;
+  color: #222;
+}
+#bottommenu2 nav li a:visited,
+#bottommenu2 nav li a:hover {
+  text-decoration: none;
+  color: #222;
 }
 /*# sourceMappingURL=main.css.map */
