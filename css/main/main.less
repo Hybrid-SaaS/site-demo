@@ -32,12 +32,17 @@ u {
 		width: 210px;
 		min-height: 500px;
 	}
+	&.nomenu {
+		.main-column-left {
+			display: none;
+		}
+	}
 	.main-column-right {
 		padding-left: 10px;
 		display: table-cell;
 		vertical-align: top;
 		min-height: 500px;
-		width: 840px;
+		width: 1000px;
 		color: #222;
 
 		.usercontent {
@@ -339,14 +344,37 @@ u {
 				}
 			}
 			.product-right {
-				float: left;
+				float: right;
 				clear: right;
 				margin-top: 50px;
+				background-color: rgba(248, 247, 247, 0.95);
+				border: 1px solid rgba(200, 200, 200, 0.95);
 				.product-options {
-					width: 399px;
+					width: 380px;
 					display: inline-block;
 					.header {
+						border-bottom: 1px solid #465363;
+						padding: 7px 0 5px;
+						background-color: rgba(238, 237, 237, 0.95);
+						&:before {
+							content: "Bestellen";
+						}
+					}
+					.footer {
+						/*border-top: 1px solid #465363;*/
 						display: none;
+						&:before {
+							/*content: "Altijd gratis verzending!";*/
+						}
+					}
+					.header, .footer {
+						height: 30px;
+						width: 380px;
+						&:before {
+							color: #222;
+							font-size: 20px;
+							margin: 0 15px;
+						}
 					}
 					.body {
 						width: 363px;
@@ -357,7 +385,6 @@ u {
 						padding-bottom: 20px;
 						color: #565656;
 						.intro.item {
-							display: none;
 							.description {
 								font-weight: bold;
 							}
@@ -368,6 +395,15 @@ u {
 							.value.price {
 								color: #222;
 							}
+							#basketAddAmount {
+								margin-right: 50px;
+								input[type=number] {
+									width: 30px;
+									&::-webkit-inner-spin-button, &::-webkit-outer-spin-button {
+										opacity: 1;
+									}
+								}
+							}
 						}
 						.item {
 							padding-left: 50px;
@@ -376,32 +412,21 @@ u {
 							position: relative;
 							margin-top: -10px;
 							display: inline-block;
-							border-radius: 50%;
-							width: 32px;
-							height: 32px;
-							-moz-box-sizing: border-box;
-							-webkit-box-sizing: border-box;
-							box-sizing: border-box;
-							border: solid 1px #b33fb2;
-							background-color: #8F328E;
-							box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 							text-align: center;
-							color: white;
-							font-size: 20px;
+							font-size: 12px;
+							width: 18px;
 							padding-top: 1px;
-							text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-							display: none;
+							border: 1px solid rgba(200, 200, 200, 0.95);
+							background-color: rgba(178, 177, 177, 0.95);
+							color: #444;
 						}
 						.input-item {
 							margin-top: 15px;
 							padding-left: 50px;
-							b {
-								display: none;
-							}
 						}
 						.number-item {
 							vertical-align: top;
-							margin-left: 18px;
+							margin-left: 8px;
 							display: inline-block;
 							padding-top: 4px;
 							input[type=text] {
@@ -457,13 +482,6 @@ u {
 								}
 							}
 						}
-					}
-					.footer {
-						height: 42px;
-						width: 386px;
-						margin-left: 7px;
-						margin-bottom: 20px;
-						display: none;
 					}
 				}
 			}
@@ -611,6 +629,29 @@ u {
 	margin: auto;
 	padding: 5px 0 0 0;
 	background-color: #465363;
+	color: white;
+	.content {
+		width: 1060px;
+		margin: auto;
+		.cart-wrap {
+			text-align: right;
+			margin-left: 60px;
+			width: 180px;
+			float: right;
+			.image {
+				vertical-align: top;
+				display: inline-block;
+			}
+			.text {
+				vertical-align: top;
+				display: inline-block;
+				text-align: left;
+				font-size: 15px;
+				font-weight: bold;
+				margin-left: 10px;
+			}
+		}
+	}
 }
 #bottommenu {
 	width: 1060px;

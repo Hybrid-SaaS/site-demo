@@ -32,12 +32,15 @@ u {
   width: 210px;
   min-height: 500px;
 }
+.maincontent.nomenu .main-column-left {
+  display: none;
+}
 .maincontent .main-column-right {
   padding-left: 10px;
   display: table-cell;
   vertical-align: top;
   min-height: 500px;
-  width: 840px;
+  width: 1000px;
   color: #222;
 }
 .maincontent .main-column-right .usercontent {
@@ -332,16 +335,41 @@ u {
   color: #222;
 }
 .maincontent .main-column-right .product .product-right {
-  float: left;
+  float: right;
   clear: right;
   margin-top: 50px;
+  background-color: rgba(248, 247, 247, 0.95);
+  border: 1px solid rgba(200, 200, 200, 0.95);
 }
 .maincontent .main-column-right .product .product-right .product-options {
-  width: 399px;
+  width: 380px;
   display: inline-block;
 }
 .maincontent .main-column-right .product .product-right .product-options .header {
+  border-bottom: 1px solid #465363;
+  padding: 7px 0 5px;
+  background-color: rgba(238, 237, 237, 0.95);
+}
+.maincontent .main-column-right .product .product-right .product-options .header:before {
+  content: "Bestellen";
+}
+.maincontent .main-column-right .product .product-right .product-options .footer {
+  /*border-top: 1px solid #465363;*/
   display: none;
+}
+.maincontent .main-column-right .product .product-right .product-options .footer:before {
+  /*content: "Altijd gratis verzending!";*/
+}
+.maincontent .main-column-right .product .product-right .product-options .header,
+.maincontent .main-column-right .product .product-right .product-options .footer {
+  height: 30px;
+  width: 380px;
+}
+.maincontent .main-column-right .product .product-right .product-options .header:before,
+.maincontent .main-column-right .product .product-right .product-options .footer:before {
+  color: #222;
+  font-size: 20px;
+  margin: 0 15px;
 }
 .maincontent .main-column-right .product .product-right .product-options .body {
   width: 363px;
@@ -351,9 +379,6 @@ u {
   padding: 10px;
   padding-bottom: 20px;
   color: #565656;
-}
-.maincontent .main-column-right .product .product-right .product-options .body .intro.item {
-  display: none;
 }
 .maincontent .main-column-right .product .product-right .product-options .body .intro.item .description {
   font-weight: bold;
@@ -365,6 +390,16 @@ u {
 .maincontent .main-column-right .product .product-right .product-options .body .intro.item .value.price {
   color: #222;
 }
+.maincontent .main-column-right .product .product-right .product-options .body .intro.item #basketAddAmount {
+  margin-right: 50px;
+}
+.maincontent .main-column-right .product .product-right .product-options .body .intro.item #basketAddAmount input[type=number] {
+  width: 30px;
+}
+.maincontent .main-column-right .product .product-right .product-options .body .intro.item #basketAddAmount input[type=number]::-webkit-inner-spin-button,
+.maincontent .main-column-right .product .product-right .product-options .body .intro.item #basketAddAmount input[type=number]::-webkit-outer-spin-button {
+  opacity: 1;
+}
 .maincontent .main-column-right .product .product-right .product-options .body .item {
   padding-left: 50px;
 }
@@ -372,32 +407,21 @@ u {
   position: relative;
   margin-top: -10px;
   display: inline-block;
-  border-radius: 50%;
-  width: 32px;
-  height: 32px;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  border: solid 1px #b33fb2;
-  background-color: #8F328E;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
   text-align: center;
-  color: white;
-  font-size: 20px;
+  font-size: 12px;
+  width: 18px;
   padding-top: 1px;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-  display: none;
+  border: 1px solid rgba(200, 200, 200, 0.95);
+  background-color: rgba(178, 177, 177, 0.95);
+  color: #444;
 }
 .maincontent .main-column-right .product .product-right .product-options .body .input-item {
   margin-top: 15px;
   padding-left: 50px;
 }
-.maincontent .main-column-right .product .product-right .product-options .body .input-item b {
-  display: none;
-}
 .maincontent .main-column-right .product .product-right .product-options .body .number-item {
   vertical-align: top;
-  margin-left: 18px;
+  margin-left: 8px;
   display: inline-block;
   padding-top: 4px;
 }
@@ -452,13 +476,6 @@ u {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.34);
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   background-position: 231px 8px;
-}
-.maincontent .main-column-right .product .product-right .product-options .footer {
-  height: 42px;
-  width: 386px;
-  margin-left: 7px;
-  margin-bottom: 20px;
-  display: none;
 }
 .maincontent.hasmenu .content {
   width: 858px;
@@ -599,6 +616,29 @@ u {
   margin: auto;
   padding: 5px 0 0 0;
   background-color: #465363;
+  color: white;
+}
+#header .content {
+  width: 1060px;
+  margin: auto;
+}
+#header .content .cart-wrap {
+  text-align: right;
+  margin-left: 60px;
+  width: 180px;
+  float: right;
+}
+#header .content .cart-wrap .image {
+  vertical-align: top;
+  display: inline-block;
+}
+#header .content .cart-wrap .text {
+  vertical-align: top;
+  display: inline-block;
+  text-align: left;
+  font-size: 15px;
+  font-weight: bold;
+  margin-left: 10px;
 }
 #bottommenu {
   width: 1060px;
