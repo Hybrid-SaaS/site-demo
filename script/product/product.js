@@ -88,7 +88,6 @@
 
 	$('.remove').off('click');
 	$('.remove').click(function () {
-		this.preventDefault();
 		var $this = $(this);
 		var $row = $this.closest('.line');
 		var id = $row.attr('id');
