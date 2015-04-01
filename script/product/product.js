@@ -96,6 +96,6 @@
 
 		$row.fadeOut('fast');
 
-		return;
+		return false;
 	});
 });
