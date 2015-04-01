@@ -1,14 +1,13 @@
 ﻿$(document).ready(function () {
 
-	for(var elem in document.getElementsByTagName("link") ) { 
+	for (var elem in document.getElementsByTagName("link")) {
 		var node = document.getElementsByTagName("link")[elem];
-		if (node.hasAttribute("href"))
-		{
-			if(node.getAttribute("href") == "/Website/CSS/Product-detail") {       
+		if (node.hasAttribute("href")) {
+			if (node.getAttribute("href") == "/Website/CSS/Product-detail") {
 				node.parentNode.removeChild(node);
 			}
 		}
-
+	}
 	var guid = WebPage.Data.productGuid;
 	$("#header .content").append("<div title='Ga naar uw winkelwagen' class='cart-wrap' id='shoppingCart'>" +
 		"<div class='image'><img class='cart' style='width: 42px; height: 37px;' alt='Winkelwagen' src=''></div>" +
