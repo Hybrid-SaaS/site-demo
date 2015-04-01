@@ -85,4 +85,17 @@
 			return updateClient();
 		});
 	}
+
+	$('.remove').click(function () {
+		this.preventDefault();
+		var $this = $(this);
+		var $row = $this.closest('.line');
+		var id = $row.attr('id');
+
+		remove(id);
+
+		$row.fadeOut('fast');
+
+		return;
+	});
 });
