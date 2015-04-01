@@ -2,8 +2,10 @@
 
 	for (var elem in document.getElementsByTagName("link")) {
 		var node = document.getElementsByTagName("link")[elem];
-		if (node.getAttribute("href") == "/Website/CSS/Product-detail") {
-			node.parentNode.removeChild(node);
+		if (typeof node == "object") {
+			if (node.getAttribute("href") == "/Website/CSS/Product-detail") {
+				node.parentNode.removeChild(node);
+			}
 		}
 	}
 	var guid = WebPage.Data.productGuid;
