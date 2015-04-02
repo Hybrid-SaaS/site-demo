@@ -17,6 +17,12 @@
 
 	$("#submit.cart-button").on("click", function () {
 		var amount = $("#basketAmount").val();
+		if (WebPage.Data.basketGuid) {
+			var bId = WebPage.Data.basketGuid;
+			updateAmount(bId, amount, function() {
+				location.href = "/Website/Pages/Basket";
+			});
+		}
 		$.getJSON('/Website/Basket/Add', { 'product': guid, 'amount': amount }).done(function () {
 			updateClient();
 			location.href = "/Website/Pages/Basket";
