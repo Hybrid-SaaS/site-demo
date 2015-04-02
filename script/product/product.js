@@ -51,12 +51,11 @@
 					$('.basket-total').text(data.total);
 					$('.basket-total-incl').text(data.totalIncl);
 					$('.basket-total-excl').text(data.totalExcl);
-					if (data.count == 1) {
-						$("#shoppingcart_text").hide();
-					} else {
-						$("#shoppingcart_text").show();
-					}
-
+				}
+				if (data.count == 1) {
+					$("#shoppingcart_text").hide();
+				} else {
+					$("#shoppingcart_text").show();
 				}
 			}
 		});
