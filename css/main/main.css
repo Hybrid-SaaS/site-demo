@@ -602,14 +602,6 @@ u {
   border: solid 1px gray;
   opacity: 0.7;
 }
-#footer {
-  width: 1060px;
-  height: 50px;
-  margin: auto;
-  margin-top: 50px;
-  border: 2px solid black;
-  padding: 5px 0 0 0;
-}
 #header {
   width: auto;
   height: 50px;
@@ -698,5 +690,18 @@ u {
 #bottommenu2 nav li a:hover {
   text-decoration: none;
   color: #222;
+}
+#footer {
+  width: auto;
+  height: 50px;
+  padding: 0;
+  margin: auto;
+  padding: 5px 0 0 0;
+  background-color: #465363;
+  color: white;
+}
+#footer .content {
+  width: 1060px;
+  margin: auto;
 }
 /*# sourceMappingURL=main.css.map */
