@@ -22,6 +22,7 @@
 			updateAmount(bId, amount, function() {
 				location.href = "/Website/Pages/Basket";
 			});
+			return false;
 		}
 		$.getJSON('/Website/Basket/Add', { 'product': guid, 'amount': amount }).done(function () {
 			updateClient();
