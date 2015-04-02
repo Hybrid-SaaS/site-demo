@@ -109,4 +109,8 @@
 
 		return false;
 	});
+
+	$('#shoppingCart').click(function () {
+		document.location.href = "/Website/Pages/Basket";
+	});
 });
