@@ -467,14 +467,10 @@ u {
   outline: none;
 }
 .maincontent .main-column-right .product .product-right .product-options .body .number-item .cart-button:hover {
-  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
 }
 .maincontent .main-column-right .product .product-right .product-options .body .number-item .cart-button:active {
-  padding-top: 13px;
-  padding-bottom: 9px;
-  padding-right: 38px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.34);
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 12px 2px rgba(0, 0, 0, 0.5);
   background-position: 231px 8px;
 }
 .maincontent.hasmenu .content {
