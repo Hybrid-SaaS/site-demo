@@ -13,4 +13,9 @@
 		windowHeight = $(window).height();
 		$(".maincontent").first().css("min-height", (windowHeight - minheight) + "px");
 	});
+
+	// Verbergen promotiecode en newsletter velden bij afrekenen
+	$("#promotion").parent().parent().prev().hide();
+	$("#promotion").parent().parent().hide();
+	$("#newsletter").parent().parent().hide();
 });
