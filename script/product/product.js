@@ -10,7 +10,7 @@
 	}
 	var guid = WebPage.Data.productGuid;
 	$("#header .content").append("<div title='Ga naar uw winkelwagen' class='cart-wrap' id='shoppingCart'>" +
-		"<div class='image'><img class='cart' style='width: 48px; height: 48px;' alt='Winkelwagen' src='https://raw.githubusercontent.com/Kuret/site-demo/master/images/basket_48.png'></div>" +
+		"<div class='image'><img class='cart' style='width: 48px; height: 48px;' alt='Winkelwagen' src='https://raw.githubusercontent.com/Hybrid-SaaS/site-demo/master/images/basket_48.png'></div>" +
 		"<div class='text'><div id='cart-count'><span id='shoppingcart_amount'>0</span> product<span id='shoppingcart_text'>en</span></div><div>" +
 		"€ <span id='shoppingcart_total'>0.00</span></div></div></div>").addClass("clearfix");
 	$(".body .intro.item").append("<div id='basketAddAmount'><div class='label'>Aantal:</div><input id='basketAmount' type='number' value='1' min='1' /></div>");
