@@ -8,6 +8,31 @@
 			}
 		}
 	}
+
+	//voorraad:
+	if (WebPage.Data.respectStock)
+	{
+		if ( WebPage.Data.stock )
+		{
+			$('#basketAddAmount')
+				.before( '<div style="color: red; margin-top: 10px; margin-bottom: 5px; font-weight: bold">Let op, er zijn nog ' + WebPage.Data.stock + ' item(s) voorradig</div>');
+			$('#basketAmount').on('change', function ()
+			{
+				var $this = $(this);
+				var amount = parseInt($this.val(), 10);
+				if ( isNaN( amount ) || amount > WebPage.Data.stock )
+				{
+					$('#submit').parent().hide();
+				}
+				else
+				{
+					$('#submit').parent().show();
+				}
+			});
+		}
+	}
+
+
 	var guid = WebPage.Data.productGuid;
 	$("#header .content").append("<div title='Ga naar uw winkelwagen' class='cart-wrap' id='shoppingCart'>" +
 		"<div class='image'><img class='cart' style='width: 48px; height: 48px;' alt='Winkelwagen' src='https://raw.githubusercontent.com/Hybrid-SaaS/site-demo/master/images/basket_48.png'></div>" +
